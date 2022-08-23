@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Make Your Team</title>
+    <title>Make Your Best Team</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
@@ -154,28 +154,28 @@
                     
                     <div class="text-gray-400 flex justify-between items-center mb-4">
                         <label for="per-player-price">Per Player</label>
-                        <input placeholder="Enter Price" class="w-28 bg-inherit border border-gray-600 py-1 pl-2" type="text">
+                        <input placeholder="Enter Price" class="w-28 bg-inherit border border-gray-600 py-1 pl-2" type="text" id="per-player-field">
                     </div>
 
-                    <button class="bg-blue-800 w-full py-1 text-base font-medium mb-4 text-white" >Calculate</button>
+                    <button class="bg-blue-800 w-full py-1 text-base font-medium mb-4 text-white" id="calculate-player-expenses">Calculate</button>
 
                     <div class="text-gray-400 flex justify-between items-center mb-4">
                         <p>Player Expenses</p>
-                        <p>$5000</p>
+                        <p>$<span id="player-expenses">00</span></p>
                     </div>
 
                     <div class="text-gray-400 flex justify-between items-center mb-4">
                         <label for="per-player-price">Manager</label>
-                        <input placeholder="Enter Price" class="w-28 bg-inherit border border-gray-600 py-1 pl-2" type="text">
+                        <input placeholder="Enter Price" class="w-28 bg-inherit border border-gray-600 py-1 pl-2" type="text" id="manager-field">
                     </div>
                     <div class="text-gray-400 flex justify-between items-center mb-4">
                         <label for="per-player-price">Coach</label>
-                        <input placeholder="Enter Price" class="w-28 bg-inherit border border-gray-600 py-1 pl-2" type="text">
+                        <input placeholder="Enter Price" class="w-28 bg-inherit border border-gray-600 py-1 pl-2" type="text" id="coach-field">
                     </div>
-                    <button class="bg-blue-800 w-full py-1 text-base font-medium mb-4 text-white" >Calculate Total</button>
+                    <button class="bg-blue-800 w-full py-1 text-base font-medium mb-4 text-white" id="calculate-total-btn">Calculate Total</button>
                     <div class="text-gray-400 flex justify-between items-center mb-4">
-                        <p>Player Expenses</p>
-                        <p class="text-amber-600 font-bold">$5000</p>
+                        <p>Total</p>
+                        <p class="text-amber-600 font-bold">$ <span id="total-expense">00</span></p>
                     </div>
                 </div>
             </div>
@@ -186,6 +186,7 @@
         <p class="text-center border-t border-gray-400 py-6 bg-neutral-900 text-white">Copyright @ 2022 All Rights Reserved.</p>
     </footer>
 
+    <script src="utilities.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
