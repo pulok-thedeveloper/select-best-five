@@ -29,7 +29,10 @@
           </div>
 
           <div class="flex flex-col justify-center col-span-2 text-center">
-            <h1 id="header-title" class="text-6xl text-amber-600 mb-5">Make Your Best Team</h1>
+            <div class="relative">
+                <h1 id="header-title" class="text-6xl text-amber-600 mb-12">Make Your Best Team</h1>
+                <img src="Images/Line Marker.png" alt="" class="absolute right-0 bottom-4">
+            </div>
             <p class="text-white">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
@@ -51,7 +54,7 @@
 
     <!-- Main Section Start-->
     <Section class="bg-neutral-900">
-        <div id="main-container" class="grid grid-cols-4 w-10/12 mx-auto pt-20 pb-32 gap-5">
+        <div id="main-container" class="grid grid-cols-4 w-10/12 mx-auto py-20 gap-5">
             <div id="player-cards" class="grid grid-cols-3 col-span-3 gap-5 text-white text-center">
                 <div class="card border border-gray-600">
                     <img class="w-full" src="Images/Players/player-1.png" alt="">
@@ -146,7 +149,7 @@
                     
                     <div class="text-gray-400 flex justify-between items-center mb-4">
                         <label for="per-player-price">Per Player</label>
-                        <input class="w-28 bg-inherit border border-gray-600 py-1 pl-2" type="text" value="1000">
+                        <input placeholder="Enter Price" class="w-28 bg-inherit border border-gray-600 py-1 pl-2" type="text">
                     </div>
 
                     <button class="bg-blue-800 w-full py-1 text-base font-medium mb-4 text-white" >Calculate</button>
@@ -158,11 +161,11 @@
 
                     <div class="text-gray-400 flex justify-between items-center mb-4">
                         <label for="per-player-price">Manager</label>
-                        <input class="w-28 bg-inherit border border-gray-600 py-1 pl-2" type="text" value="1000">
+                        <input placeholder="Enter Price" class="w-28 bg-inherit border border-gray-600 py-1 pl-2" type="text">
                     </div>
                     <div class="text-gray-400 flex justify-between items-center mb-4">
                         <label for="per-player-price">Coach</label>
-                        <input class="w-28 bg-inherit border border-gray-600 py-1 pl-2" type="text" value="1000">
+                        <input placeholder="Enter Price" class="w-28 bg-inherit border border-gray-600 py-1 pl-2" type="text">
                     </div>
                     <button class="bg-blue-800 w-full py-1 text-base font-medium mb-4 text-white" >Calculate Total</button>
                     <div class="text-gray-400 flex justify-between items-center mb-4">
@@ -172,7 +175,10 @@
                 </div>
             </div>
         </div>
-
     </Section>
+
+    <footer>
+        <p class="text-center border-t border-gray-400 py-6 bg-neutral-900 text-white">Copyright @ 2022 All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
